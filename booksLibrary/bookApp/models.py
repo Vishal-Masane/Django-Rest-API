@@ -11,7 +11,7 @@ class BooksLibrary(models.Model):
     Is_Publish = models.BooleanField(default=True)
 
     class Meta:
-        db_table = "books_library"
+        db_table = "books_library"      # Name of the table on DB
 
     def __str__(self):
         return f"{self.__dict__}"
